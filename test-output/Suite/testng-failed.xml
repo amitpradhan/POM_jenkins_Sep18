@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.crm.qa.extentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.LoginPageTest -->
+      <class name="testcases.ContactsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateCreatenewContact"/>
+          <include name="selectSingleContactTest"/>
+          <include name="tearDown"/>
+          <include name="selectMultipleContactTest"/>
+        </methods>
+      </class> <!-- testcases.ContactsPageTest -->
+      <class name="testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
